@@ -1,11 +1,18 @@
-class Pirate
-attr_accessor :name, :weight, :height
-PIRATES = []
+class Hero
+  attr_accessor :name, :power, :bio
+  HEROS = []
 
-def initialize(params)
-    @name = params[:name]
-    @weight = params[:weight]
-    @height = params[:height]
-    PIRATES << self
+  def initialize(args)
+      @name = args[:name]
+      @power = args[:power]
+      @booty = args[:bio]
+      HEROS << self
+    end
+  def self.all
+    HEROS
+  end
+
+  def self.clear
+    HEROS.clear
   end
 end
