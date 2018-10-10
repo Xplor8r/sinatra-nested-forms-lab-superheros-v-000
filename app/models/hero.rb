@@ -5,7 +5,7 @@ class Hero
   def initialize(args)
       @name = args[:name]
       @power = args[:power]
-      @booty = args[:bio]
+      @bio = args[:bio]
       HEROES << self
     end
   def self.all
